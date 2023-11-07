@@ -1,7 +1,8 @@
 import { Button, ButtonGroup } from "@mui/material";
 import VoiceCallIcon from "@mui/icons-material/Phone";
+import EditNoteIcon from "@mui/icons-material/Note";
 
-export function CalendarViewBar() {
+export function CalendarHelpBar() {
   return (
     <div
       className="actionbar"
@@ -29,7 +30,18 @@ export function CalendarViewBar() {
                 style={{ textTransform: "none" }}
                 variant="text"
               >
-                People Settings
+                Help
+              </Button>
+            </li>
+
+            <li style={{ margin: "1px" }}>
+              <Button
+                size="small"
+                startIcon={<EditNoteIcon />}
+                style={{ textTransform: "none" }}
+                variant="text"
+              >
+                Outlook mobile
               </Button>
             </li>
           </ul>
