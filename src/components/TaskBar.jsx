@@ -19,62 +19,112 @@ export function TaskBar() {
               margin: "0",
             }}
           >
-            <li style={{ margin: "5px" }}>
+            <li style={{}}>
               <Tooltip title="Delete">
-                <Button startIcon={<VoiceCallIcon />} />
+                <Button
+                  startIcon={<VoiceCallIcon />}
+                  variant="text"
+                  size="large"
+                  style={{ padding: "10px" }}
+                />
               </Tooltip>
             </li>
 
-            <li style={{ margin: "5px" }}>
+            <li style={{}}>
               <Tooltip title="OneNote Feed">
-                <Button startIcon={<EditNoteIcon />} />
+                <Button
+                  startIcon={<EditNoteIcon />}
+                  variant="text"
+                  size="large"
+                  style={{ padding: "10px" }}
+                />
               </Tooltip>
             </li>
 
-            <li style={{ margin: "5px" }}>
+            <li style={{}}>
               <Tooltip title="My Day">
-                <Button startIcon={<EditCalendarIcon />} />
+                <Button
+                  startIcon={<EditCalendarIcon />}
+                  variant="text"
+                  size="large"
+                  style={{ padding: "10px" }}
+                />
               </Tooltip>
             </li>
 
-            <li style={{ margin: "5px" }}>
+            <li style={{}}>
               <Tooltip title="Notification">
-                <Button startIcon={<NotificationsIcon />} />
+                <Button
+                  startIcon={<NotificationsIcon />}
+                  variant="text"
+                  size="large"
+                  style={{ padding: "10px" }}
+                />
               </Tooltip>
             </li>
 
-            <li style={{ margin: "5px" }}>
+            <li style={{}}>
               <Tooltip title="Settings">
-                <Button startIcon={<SettingsIcon />} />
+                <Button
+                  startIcon={<SettingsIcon />}
+                  variant="text"
+                  size="large"
+                  style={{ padding: "10px" }}
+                />
               </Tooltip>
             </li>
 
-            <li style={{ margin: "5px" }}>
+            <li style={{}}>
               <Tooltip title="Tips">
-                <Button startIcon={<TipsAndUpdatesIcon />} />
+                <Button
+                  startIcon={<TipsAndUpdatesIcon />}
+                  variant="text"
+                  size="large"
+                  style={{ padding: "10px" }}
+                />
               </Tooltip>
             </li>
-            <li style={{ margin: "5px" }}>
+            <li style={{}}>
               <Tooltip title="My Day">
-                <Button startIcon={<EditCalendarIcon />} />
+                <Button
+                  startIcon={<EditCalendarIcon />}
+                  variant="text"
+                  size="large"
+                  style={{ padding: "10px" }}
+                />
               </Tooltip>
             </li>
 
-            <li style={{ margin: "5px" }}>
+            <li style={{}}>
               <Tooltip title="Notification">
-                <Button startIcon={<NotificationsIcon />} />
+                <Button
+                  startIcon={<NotificationsIcon />}
+                  variant="text"
+                  size="large"
+                  style={{ padding: "10px" }}
+                />
               </Tooltip>
             </li>
 
-            <li style={{ margin: "5px" }}>
+            <li style={{}}>
               <Tooltip title="Settings">
-                <Button startIcon={<SettingsIcon />} />
+                <Button
+                  startIcon={<SettingsIcon />}
+                  variant="text"
+                  size="large"
+                  style={{ padding: "10px" }}
+                />
               </Tooltip>
             </li>
 
-            <li style={{ margin: "5px" }}>
+            <li style={{}}>
               <Tooltip title="Tips">
-                <Button startIcon={<TipsAndUpdatesIcon />} />
+                <Button
+                  startIcon={<TipsAndUpdatesIcon />}
+                  variant="text"
+                  size="large"
+                  style={{ padding: "10px" }}
+                />
               </Tooltip>
             </li>
           </ul>

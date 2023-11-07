@@ -4,15 +4,8 @@ import EditNoteIcon from "@mui/icons-material/Note";
 import EditCalendarIcon from "@mui/icons-material/Event";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import SettingsIcon from "@mui/icons-material/Settings";
-import TipsAndUpdatesIcon from "@mui/icons-material/Info";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import { TaskBar } from "../TaskBar";
 
-export function CalendarActionBar() {
-  const handleClick = () => {
-    console.info(`You clicked whatever}`);
-  };
-
+export function CalendarViewBar() {
   return (
     <div
       className="actionbar"
@@ -21,44 +14,24 @@ export function CalendarActionBar() {
         border: "1px solid red",
       }}
     >
-      <div>
-        <TaskBar />
-      </div>
-
       <div style={{}}>
-        <ButtonGroup style={{}}>
+        <ButtonGroup>
           <ul
             style={{
               display: "flex",
               listStyleType: "none",
               alignItems: "center",
               border: "1px solid green",
-              padding: "5",
+              padding: "0",
               margin: "0",
             }}
           >
             <li style={{ margin: "1px" }}>
               <Button
                 size="small"
-                onClick={handleClick}
-                style={{ textTransform: "none" }}
-              >
-                New event
-              </Button>
-              <Button
-                size="small"
-                aria-label="select merge strategy"
-                aria-haspopup="menu"
-                style={{ margin: "1px" }}
-              >
-                <ArrowDropDownIcon />
-              </Button>
-            </li>
-            <li style={{ margin: "1px" }}>
-              <Button
-                size="small"
                 startIcon={<VoiceCallIcon />}
                 style={{ textTransform: "none" }}
+                variant="text"
               >
                 Day
               </Button>
@@ -69,6 +42,7 @@ export function CalendarActionBar() {
                 size="small"
                 startIcon={<EditNoteIcon />}
                 style={{ textTransform: "none" }}
+                variant="text"
               >
                 Work week
               </Button>
@@ -79,6 +53,7 @@ export function CalendarActionBar() {
                 size="small"
                 startIcon={<EditCalendarIcon />}
                 style={{ textTransform: "none" }}
+                variant="text"
               >
                 Week
               </Button>
@@ -89,6 +64,7 @@ export function CalendarActionBar() {
                 size="small"
                 startIcon={<NotificationsIcon />}
                 style={{ textTransform: "none" }}
+                variant="text"
               >
                 Month
               </Button>
@@ -99,28 +75,49 @@ export function CalendarActionBar() {
                 size="small"
                 startIcon={<SettingsIcon />}
                 style={{ textTransform: "none" }}
+                variant="text"
+              >
+                Saved views
+              </Button>
+            </li>
+            <li style={{ margin: "1px" }}>
+              <Button
+                size="small"
+                startIcon={<SettingsIcon />}
+                style={{ textTransform: "none" }}
+                variant="text"
               >
                 Split view
               </Button>
             </li>
-
             <li style={{ margin: "1px" }}>
               <Button
                 size="small"
-                startIcon={<TipsAndUpdatesIcon />}
+                startIcon={<SettingsIcon />}
                 style={{ textTransform: "none" }}
+                variant="text"
               >
-                Filter share
+                Time scale
               </Button>
             </li>
-
             <li style={{ margin: "1px" }}>
               <Button
                 size="small"
-                startIcon={<TipsAndUpdatesIcon />}
+                startIcon={<SettingsIcon />}
                 style={{ textTransform: "none" }}
+                variant="text"
               >
-                Print
+                Filter
+              </Button>
+            </li>
+            <li style={{ margin: "1px" }}>
+              <Button
+                size="small"
+                startIcon={<SettingsIcon />}
+                style={{ textTransform: "none" }}
+                variant="text"
+              >
+                Calendar settings
               </Button>
             </li>
           </ul>

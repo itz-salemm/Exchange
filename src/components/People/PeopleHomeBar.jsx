@@ -7,9 +7,8 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import TipsAndUpdatesIcon from "@mui/icons-material/Info";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { TaskBar } from "../TaskBar";
-import { Nav } from "../Nav";
 
-export function MailActionBar() {
+export function PeopleHomeBar() {
   const handleClick = () => {
     console.info(`You clicked whatever}`);
   };
@@ -22,22 +21,19 @@ export function MailActionBar() {
         border: "1px solid red",
       }}
     >
-      <div style={{}}>
+      <div>
         <TaskBar />
       </div>
 
       <div style={{}}>
-        <div>
-          <Nav />
-        </div>
-        <ButtonGroup>
+        <ButtonGroup style={{}}>
           <ul
             style={{
               display: "flex",
               listStyleType: "none",
               alignItems: "center",
               border: "1px solid green",
-              padding: "0",
+              padding: "5",
               margin: "0",
             }}
           >
@@ -47,7 +43,7 @@ export function MailActionBar() {
                 onClick={handleClick}
                 style={{ textTransform: "none" }}
               >
-                New email
+                New contact
               </Button>
               <Button
                 size="small"
@@ -64,7 +60,7 @@ export function MailActionBar() {
                 startIcon={<VoiceCallIcon />}
                 style={{ textTransform: "none" }}
               >
-                Delete
+                Edit
               </Button>
             </li>
 
@@ -74,7 +70,7 @@ export function MailActionBar() {
                 startIcon={<EditNoteIcon />}
                 style={{ textTransform: "none" }}
               >
-                Archive
+                Delete
               </Button>
             </li>
 
@@ -84,7 +80,7 @@ export function MailActionBar() {
                 startIcon={<EditCalendarIcon />}
                 style={{ textTransform: "none" }}
               >
-                Report
+                Restore
               </Button>
             </li>
 
@@ -94,7 +90,7 @@ export function MailActionBar() {
                 startIcon={<NotificationsIcon />}
                 style={{ textTransform: "none" }}
               >
-                Sweep
+                Add to contact
               </Button>
             </li>
 
@@ -104,7 +100,7 @@ export function MailActionBar() {
                 startIcon={<SettingsIcon />}
                 style={{ textTransform: "none" }}
               >
-                Move to
+                Add to favorites
               </Button>
             </li>
 
@@ -114,7 +110,7 @@ export function MailActionBar() {
                 startIcon={<TipsAndUpdatesIcon />}
                 style={{ textTransform: "none" }}
               >
-                Reply all
+                Add to list
               </Button>
             </li>
 
@@ -124,7 +120,7 @@ export function MailActionBar() {
                 startIcon={<TipsAndUpdatesIcon />}
                 style={{ textTransform: "none" }}
               >
-                Mark all as read
+                Add memebers
               </Button>
             </li>
 
@@ -134,7 +130,7 @@ export function MailActionBar() {
                 startIcon={<VoiceCallIcon />}
                 style={{ textTransform: "none" }}
               >
-                Categorise
+                Invite others
               </Button>
             </li>
 
@@ -144,7 +140,7 @@ export function MailActionBar() {
                 startIcon={<EditNoteIcon />}
                 style={{ textTransform: "none" }}
               >
-                Flag / Unflag
+                Leave group
               </Button>
             </li>
 
@@ -154,7 +150,7 @@ export function MailActionBar() {
                 startIcon={<EditCalendarIcon />}
                 style={{ textTransform: "none" }}
               >
-                Pin / Unpin
+                Follow
               </Button>
             </li>
 
@@ -164,7 +160,7 @@ export function MailActionBar() {
                 startIcon={<NotificationsIcon />}
                 style={{ textTransform: "none" }}
               >
-                Snooze
+                Manage contact
               </Button>
             </li>
 
@@ -174,17 +170,7 @@ export function MailActionBar() {
                 startIcon={<SettingsIcon />}
                 style={{ textTransform: "none" }}
               >
-                Print
-              </Button>
-            </li>
-
-            <li style={{ margin: "1px" }}>
-              <Button
-                size="small"
-                startIcon={<TipsAndUpdatesIcon />}
-                style={{ textTransform: "none" }}
-              >
-                Undo
+                Renew
               </Button>
             </li>
           </ul>

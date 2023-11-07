@@ -24,24 +24,36 @@ export function Nav() {
           >
             <li style={{ margin: "5px" }}>
               <Tooltip title="Hide navigation pane">
-                <Button startIcon={<MenuIcon />} />
+                <Button startIcon={<MenuIcon />} variant="text" />
               </Tooltip>
             </li>
 
             <li style={{ margin: "1px" }}>
-              <Button size="small" style={{ textTransform: "none" }}>
+              <Button
+                size="small"
+                variant="text"
+                style={{ textTransform: "none" }}
+              >
                 Home
               </Button>
             </li>
 
             <li style={{ margin: "1px" }}>
-              <Button size="small" style={{ textTransform: "none" }}>
+              <Button
+                size="small"
+                variant="text"
+                style={{ textTransform: "none" }}
+              >
                 View
               </Button>
             </li>
 
             <li style={{ margin: "1px" }}>
-              <Button size="small" style={{ textTransform: "none" }}>
+              <Button
+                size="small"
+                variant="text"
+                style={{ textTransform: "none" }}
+              >
                 Help
               </Button>
             </li>

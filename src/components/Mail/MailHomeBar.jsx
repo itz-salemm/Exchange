@@ -7,8 +7,9 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import TipsAndUpdatesIcon from "@mui/icons-material/Info";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { TaskBar } from "../TaskBar";
+import { Nav } from "../Nav";
 
-export function PeopleActionBar() {
+export function MailHomeBar() {
   const handleClick = () => {
     console.info(`You clicked whatever}`);
   };
@@ -21,19 +22,22 @@ export function PeopleActionBar() {
         border: "1px solid red",
       }}
     >
-      <div>
+      <div style={{}}>
         <TaskBar />
       </div>
 
       <div style={{}}>
-        <ButtonGroup style={{}}>
+        <div>
+          <Nav />
+        </div>
+        <ButtonGroup>
           <ul
             style={{
               display: "flex",
               listStyleType: "none",
               alignItems: "center",
               border: "1px solid green",
-              padding: "5",
+              padding: "0",
               margin: "0",
             }}
           >
@@ -43,7 +47,7 @@ export function PeopleActionBar() {
                 onClick={handleClick}
                 style={{ textTransform: "none" }}
               >
-                New contact
+                New email
               </Button>
               <Button
                 size="small"
@@ -59,16 +63,7 @@ export function PeopleActionBar() {
                 size="small"
                 startIcon={<VoiceCallIcon />}
                 style={{ textTransform: "none" }}
-              >
-                Edit
-              </Button>
-            </li>
-
-            <li style={{ margin: "1px" }}>
-              <Button
-                size="small"
-                startIcon={<EditNoteIcon />}
-                style={{ textTransform: "none" }}
+                variant="text"
               >
                 Delete
               </Button>
@@ -77,10 +72,22 @@ export function PeopleActionBar() {
             <li style={{ margin: "1px" }}>
               <Button
                 size="small"
+                startIcon={<EditNoteIcon />}
+                style={{ textTransform: "none" }}
+                variant="text"
+              >
+                Archive
+              </Button>
+            </li>
+
+            <li style={{ margin: "1px" }}>
+              <Button
+                size="small"
                 startIcon={<EditCalendarIcon />}
                 style={{ textTransform: "none" }}
+                variant="text"
               >
-                Restore
+                Report
               </Button>
             </li>
 
@@ -89,8 +96,9 @@ export function PeopleActionBar() {
                 size="small"
                 startIcon={<NotificationsIcon />}
                 style={{ textTransform: "none" }}
+                variant="text"
               >
-                Add to contact
+                Sweep
               </Button>
             </li>
 
@@ -99,8 +107,9 @@ export function PeopleActionBar() {
                 size="small"
                 startIcon={<SettingsIcon />}
                 style={{ textTransform: "none" }}
+                variant="text"
               >
-                Add to favorites
+                Move to
               </Button>
             </li>
 
@@ -109,8 +118,9 @@ export function PeopleActionBar() {
                 size="small"
                 startIcon={<TipsAndUpdatesIcon />}
                 style={{ textTransform: "none" }}
+                variant="text"
               >
-                Add to list
+                Reply all
               </Button>
             </li>
 
@@ -119,8 +129,9 @@ export function PeopleActionBar() {
                 size="small"
                 startIcon={<TipsAndUpdatesIcon />}
                 style={{ textTransform: "none" }}
+                variant="text"
               >
-                Add memebers
+                Mark all as read
               </Button>
             </li>
 
@@ -129,8 +140,9 @@ export function PeopleActionBar() {
                 size="small"
                 startIcon={<VoiceCallIcon />}
                 style={{ textTransform: "none" }}
+                variant="text"
               >
-                Invite others
+                Categorise
               </Button>
             </li>
 
@@ -139,8 +151,9 @@ export function PeopleActionBar() {
                 size="small"
                 startIcon={<EditNoteIcon />}
                 style={{ textTransform: "none" }}
+                variant="text"
               >
-                Leave group
+                Flag / Unflag
               </Button>
             </li>
 
@@ -149,8 +162,9 @@ export function PeopleActionBar() {
                 size="small"
                 startIcon={<EditCalendarIcon />}
                 style={{ textTransform: "none" }}
+                variant="text"
               >
-                Follow
+                Pin / Unpin
               </Button>
             </li>
 
@@ -159,8 +173,9 @@ export function PeopleActionBar() {
                 size="small"
                 startIcon={<NotificationsIcon />}
                 style={{ textTransform: "none" }}
+                variant="text"
               >
-                Manage contact
+                Snooze
               </Button>
             </li>
 
@@ -169,8 +184,20 @@ export function PeopleActionBar() {
                 size="small"
                 startIcon={<SettingsIcon />}
                 style={{ textTransform: "none" }}
+                variant="text"
               >
-                Renew
+                Print
+              </Button>
+            </li>
+
+            <li style={{ margin: "1px" }}>
+              <Button
+                size="small"
+                startIcon={<TipsAndUpdatesIcon />}
+                style={{ textTransform: "none" }}
+                variant="text"
+              >
+                Undo
               </Button>
             </li>
           </ul>
